@@ -1,0 +1,82 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\title{Ngspice for kraftelektronikk}
+\author{Eirik Haustveit}
+\begin{document}
+	\maketitle
+	
+	
+	Dette kapittelet tar for seg bruken av Ngspice til simulering av tilnærma ideelle omformarar. Formålet er mellom anna å gera lesaren i stand til å simulera idealiserte omformarar for å skaffa seg betre innsikt i verkemåten til topologiane, og til å verifisera teoretiske berekningar.
+	
+	
+	\section{Lineære krestelement med sinusforma straum og spenning}
+	
+	
+	\subsection{Teikning av grafar med gnuplot}
+	
+	\subsection{Teikning av grafar i ekstern programvare}
+	
+	
+	\subsection{Måling av ulike verdiar (Snitt, RMS, etc.)}
+	
+	
+	\section{Ikkje-sinusforma straum og spenning}
+	
+	
+	\subsection{Fourieranalyse}
+
+	
+	\section{Diodelikerettar}
+	
+	
+	\subsection{Modellering av ein ideell diode}
+	
+	
+	
+	\section{Tyristoromformar}
+	
+	
+	\subsection{Modellering av ein ideell tyristor}
+	
+	\subsection{Generering av synkronisert pulssignal for tyristor}
+	
+	Sidan ein normalt starter simuleringa ved tida \(t = 0\) vil ei spenningskjelde med pulsspenning starta opp i fase sinusspenninga som forsyner tyristoromformaren. Dette er derimot ikkje eit realistisk scenario. I praksis vil det vera heilt tilfeldig kvar du er på sinuskurva når regulatoren for tyristoromformaren starter opp, og du er derfor avhengig av å måla tilført spenning for å finna ut når du skal trigga ein gitt tyristor. Denne synkroniseringa vil ofte gjennomførast ved hjelp av ein nullgjennomgangsdetektor, eller ved hjelp av ei faselåst sløyfe (PLL).
+	
+	\subsection{Nullgjennomgangsdetektor}
+	
+	Dersom ein kun er ute etter å simulera ein idealisert krins, så kan det vera tilstrekkelig å laga ein firkantpuls som er høg så lenge sinuskurva er i sin positive halvperiode. Ei flanketrigga vippe kan 
+	
+	\subsubsection{Faselåst sløyfe (PLL)}
+	
+	Ein PLL består av (minst) tre primærkomponentar:
+	
+	\begin{itemize}
+		\item Spenningsstyrt oscillator (VCO)
+		\item Fasedetektor
+		\item Sløyfefilter
+	\end{itemize}
+	
+	
+	
+	\section{DC/DC omformar}
+	
+	
+	\subsection{Modellering av ein ideell styrt brytar}
+	
+	\subsection{Generering av PWM med variabel arbeidssyklus}
+	
+	
+	\section{DC/AC omformar}
+	
+	
+	\subsection{Generering av sinusforma PWM}
+	
+	
+	
+	
+
+	
+
+	
+	
+\end{document}
